@@ -7,6 +7,14 @@ public class Main {
         System.out.println("Frequency Table for Sentence: \"" + str + "\"");
         displayFrequencyTable(frequencyTable);
         System.out.println();
+
+
+        String str2 = "Paranoids are not paranoid because they are paranoid " +
+                "but because they keep putting themselves deliberately into paranoid avoidable situations";
+        updateFrequency(frequencyTable, str2);
+        System.out.println("Frequency Table of str2:");
+        displayFrequencyTable(frequencyTable);
+
     }
     // updateFrequency method to process a sentence and update the frequency table
     private static void updateFrequency(HashTable<String, Integer> frequencyTable, String sentence) {
