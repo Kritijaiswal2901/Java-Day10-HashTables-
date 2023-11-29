@@ -15,6 +15,13 @@ public class Main {
         System.out.println("Frequency Table of str2:");
         displayFrequencyTable(frequencyTable);
 
+        String wordToRemove = "avoidable";
+        frequencyTable.remove(wordToRemove);
+        System.out.println("\nFrequency Table after removing \"" + wordToRemove + "\":");
+        displayFrequencyTable(frequencyTable);
+        System.out.println();
+
+
     }
     // updateFrequency method to process a sentence and update the frequency table
     private static void updateFrequency(HashTable<String, Integer> frequencyTable, String sentence) {
